@@ -15,7 +15,7 @@ st.set_page_config(
 @st.cache_resource
 def load_model():
     return WhisperModel(
-        "medium",      # tiny, base, small, medium, large-v3
+        "base",      # tiny, base, small, medium, large-v3
         device="cpu",  # cuda si tienes GPU NVIDIA
         compute_type="int8"
     )
